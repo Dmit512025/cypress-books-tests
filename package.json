@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test:desktop": "cypress open --config-file cypress.config.js",
-    "test:mobile": "cypress open --config-file cypress.mobile.config.js",
-    "test:desktop:headless": "cypress run --config-file cypress.config.js",
-    "test:mobile:headless": "cypress run --config-file cypress.mobile.config.js"
+    "test:desktop-headed": "cypress open --config-file cypress.config.js --browser chrome",
+    "test:desktop-headless": "cypress run --config-file cypress.config.js --browser chrome",
+    "test:mobile-headed": "cypress open --config-file cypress.mobile.config.js --browser electron",
+    "test:mobile-headless": "cypress run --config-file cypress.mobile.config.js --browser electron"
   },
   "repository": {
     "type": "git",
